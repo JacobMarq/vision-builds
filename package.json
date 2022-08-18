@@ -3,13 +3,20 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.1.2",
+    "@fortawesome/fontawesome-svg-core": "^6.1.2",
+    "@fortawesome/free-regular-svg-icons": "^6.1.2",
+    "@fortawesome/free-solid-svg-icons": "^6.1.2",
+    "@fortawesome/react-fontawesome": "^0.2.0",
     "@testing-library/jest-dom": "^5.16.5",
     "@types/jest": "^27.5.2",
     "@types/node": "^16.11.49",
     "@types/react": "^18.0.17",
     "@types/react-dom": "^18.0.6",
+    "fontawesome-free": "^1.0.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
@@ -20,10 +27,14 @@
     "eject": "react-scripts eject",
     "style-lint": "stylelint --config=.stylelintrc.json \"src/**/*.scss\" --formatter verbose",
     "lint": "eslint --max-warnings=0 --fix --ext .ts,.tsx .",
-    "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc"
+    "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc",
+    "prepare": "husky install"
   },
   "lint-staged": {
-    "src/**/*.{ts,tsx}": ["npm run format", "npm run lint"],
+    "src/**/*.{ts,tsx}": [
+      "npm run format",
+      "npm run lint"
+    ],
     "src/**/*.scss": "npm run style-lint"
   },
   "jest": {
