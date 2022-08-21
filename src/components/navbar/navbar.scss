@@ -1,6 +1,7 @@
 .navbar {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 90%;
   padding: 20px;
   top: 0;
@@ -14,21 +15,25 @@
   text-decoration: none;
 }
 
-.navbar div {
-  a {
-    color: teal;
-  }
+.menu-items * {
+  color: teal;
+}
 
-  a:focus {
-    color: aqua;
-    outline: none;
-  }
+.menu-items *:focus {
+  color: aqua;
+  outline: none;
+}
 
-  a:hover {
-    color: rgb(1 99 99);
-  }
+.menu-items *:hover {
+  color: rgb(1 99 99);
+}
 
-  a:hover:active {
-    color: goldenrod;
-  }
+.menu-items *:hover:active {
+  color: goldenrod;
+}
+
+.main-menu {
+  display: flex;
+  color: white;
+  flex-direction: row;
 }

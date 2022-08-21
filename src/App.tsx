@@ -3,7 +3,7 @@ import {Routes, Route} from 'react-router-dom';
 import logo from './logo.svg';
 import './App.scss';
 import Navbar from './components/navbar/navbar';
-import LoadingScreen from './components/LoadingScreen/loading-screen';
+import LoadingScreen from './components/loadingScreen/loadingScreen';
 
 function App() {
   const [loading, setLoading] = useState(true);
